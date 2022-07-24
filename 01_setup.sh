@@ -13,6 +13,7 @@ systemctl restart sshd
 echo -e "\e[32;1m[+] Restarted SSH daemon\e[0;0m"
 
 cp assets/banner.sh /etc/update-motd.d/30-banner
+update-motd
 echo -e "\e[32;1m[+] Updated banner\e[0;0m"
 
 yum install nasm gcc -y
